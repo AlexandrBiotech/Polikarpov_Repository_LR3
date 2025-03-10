@@ -3,7 +3,7 @@
 using namespace std;
 
 // Функция для ввода натурального числа X
-void EnterNaturalNumber() 
+int EnterNaturalNumber() 
 {
     int X;
     cout << "Введите натуральное число X: ";
@@ -14,7 +14,7 @@ void EnterNaturalNumber()
 // Функция для ввода цифры N (которая меньше числа разрядов числа X)
 void EnterDigitN(int X) 
 {
-    
+
 }
 
 // Функция для вычисления произведения последних N цифр числа X
