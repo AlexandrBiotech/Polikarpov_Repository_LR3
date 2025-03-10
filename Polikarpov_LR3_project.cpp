@@ -36,7 +36,13 @@ int EnterDigitN(int X)
 // Функция для вычисления произведения последних N цифр числа X
 void ProductOfLastNDigits(int X, int N) 
 {
-    
+    int product = 1;
+    for (int i = 0; i < N; i++) {
+        int digit = X % 10;
+        product *= digit;
+        X /= 10;
+    }
+    cout << "Произведение последних " << N << " цифр числа X: " << product << endl;
 }
 
 // Функция для определения количества цифр в числе X
