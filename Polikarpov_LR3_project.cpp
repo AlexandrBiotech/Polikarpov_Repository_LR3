@@ -48,7 +48,13 @@ void ProductOfLastNDigits(int X, int N)
 // Функция для определения количества цифр в числе X
 void CountDigits(int X) 
 {
-    
+    int count = 0;
+    int temp = X;
+    while (temp != 0) {
+        temp /= 10;
+        count++;
+    }
+    cout << "Количество цифр в числе X: " << count << endl; 
 }
 
 int main() {
